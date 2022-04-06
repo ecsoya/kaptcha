@@ -1057,7 +1057,7 @@ public class FiveLetterFirstNameTextCreator implements TextProducer
 	public String getText()
 	{
 		int randomContext = FIRST_NAMES.length - 1;
-		Random rand = new SecureRandom();
+		SecureRandom rand = new SecureRandom();
 		return FIRST_NAMES[rand.nextInt(randomContext) + 1];
 	}
 }
